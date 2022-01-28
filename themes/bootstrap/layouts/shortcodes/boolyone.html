@@ -1,0 +1,28 @@
+{{ $show_moves := true }}
+{{ $smoves := .Get "hidemoves" }}
+{{ if (eq $smoves "1") }}
+  {{ $show_moves = false }}
+{{ end }}
+
+{{ $show_moves2 := true }}
+{{ $smoves2 := .Get "hidemoves2" }}
+{{ if (eq $smoves2 "true") }}
+  {{ $show_moves2 = false }}
+{{ end }}
+
+{{ $show_moves3 := true }}
+{{ $smoves3 := .Get "hidemoves3" }}
+{{ if $smoves3 }}
+  {{ $show_moves3 = false }}
+{{ end }}
+
+{{ $show_moves4 := true }}
+{{ $smoves4 := .Get "hidemoves4" }}
+{{ if eq $smoves4 1 }}
+  {{ $show_moves4 = false }}
+{{ end }}
+
+<p>show_moves = {{$show_moves}}</p>
+<p>show_moves2 = {{$show_moves2}}</p>
+<p>show_moves3 = {{$show_moves3}}</p>
+<p>show_moves4 = {{$show_moves4}}</p>

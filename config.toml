@@ -1,6 +1,6 @@
 baseURL = 'https://somewhere.netlify/'
 languageCode = 'en-gb'
-title = 'Crawf Sand Box'
+title = 'My Sandy Box'
 theme = "bootstrap"
 [params]
   author = "Crawford Macnab"
